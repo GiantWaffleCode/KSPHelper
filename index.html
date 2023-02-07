@@ -3,18 +3,14 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <script src="./app.js" defer></script>
+        <script src="./app.js" defer type="module"></script>
 
         <div class="dropdown">
             <div class="select">
-                <span class="selected">Body</span>
+                <span class="selected">Planet</span>
                 <div class="caret"></div>
             </div>
-            <ul class="menu">
-                <li>Kerbin</li>
-                <li>Duna</li>
-                <li>Jool</li>
-            </ul>
+            <ul class="menu" id="myPlanetList"></ul>
         </div>
 
         <div class="dropdown">
@@ -22,12 +18,8 @@
                 <span class="selected">Moon</span>
                 <div class="caret"></div>
             </div>
-            <ul class="menu">
-                <li>Mun</li>
-                <li>Minmus</li>
-                <li>Ike</li>
-                <li class="active">Laythe</li>
-                <li>Tylo</li>
+            <ul class="menu" id="myMoonList">
+                <li>None</li>
             </ul>
         </div>
     </body>

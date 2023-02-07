@@ -1,19 +1,18 @@
-
-const Kerbol = {
+export const Kerbol = {
 
 System: "Kerbol",
 
 Planets: {
     Moho: {
         name: "Moho",
-        orbit: 5263138304,
+        orbit: 5_263_138_304,
         gravity: 2.70,
         mass: 12345    
         },
 
     Eve: {
         name: "Eve",
-        orbit: 9832684544,
+        orbit: 9_832_684_544,
         gravity: 16.7,
         mass: 12345,    
         moons: {
@@ -108,9 +107,7 @@ Planets: {
         name: "Eeloo",
         orbit: 90118820000,
         gravity: 1.69,
-        mass: 12345    
+        mass: 1.1149224e21    
         }
     }
 };
-
-console.Log(Kerbol.Kerbin.Mun.name);
