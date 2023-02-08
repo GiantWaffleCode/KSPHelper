@@ -4,23 +4,68 @@
     </head>
     <body>
         <script src="./app.js" defer type="module"></script>
-
-        <div class="dropdown">
-            <div class="select">
-                <span class="selected">Planet</span>
-                <div class="caret"></div>
+        <form>
+            <div>
+                <h1>System</h1>
+                <div class="select">
+                    <select name="format" id="format">
+                        <option selected disabled>System</option>
+                        <option value="kerbol">Kerbol</option>
+                        <option value="rss">RSS</option>
+                    </select>
+                </div>
             </div>
-            <ul class="menu" id="myPlanetList"></ul>
-        </div>
 
-        <div class="dropdown">
-            <div class="select">
-                <span class="selected">Moon</span>
-                <div class="caret"></div>
+            <div>
+                <h1>Origin</h1>
+                <div class="select">
+                    <select name="format" id="format">
+                        <option selected disabled>Body</option>
+                        <option value="moho">Moho</option>
+                        <option value="eve">Eve</option>
+                        <option value="kerbin">Kerbin</option>
+                        <option value="duna">Duna</option>
+                        <option value="dres">Dres</option>
+                        <option value="jool">Jool</option>
+                        <option value="eeloo">Eeloo</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select name="format" id="format">
+                        <option selected disabled>Moon</option>
+                        <option value="mun">Mun</option>
+                        <option value="minmus">Minmus</option>
+                    </select>
+                </div>
             </div>
-            <ul class="menu" id="myMoonList">
-                <li>None</li>
-            </ul>
-        </div>
+
+            <div>
+                <h1>Destination</h1>
+                <div class="select">
+                    <select name="format" id="format">
+                        <option selected disabled>Body</option>
+                        <option value="moho">Moho</option>
+                        <option value="eve">Eve</option>
+                        <option value="kerbin">Kerbin</option>
+                        <option value="duna">Duna</option>
+                        <option value="dres">Dres</option>
+                        <option value="jool">Jool</option>
+                        <option value="eeloo">Eeloo</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select name="format" id="format">
+                        <option selected disabled>Moon</option>
+                        <option value="mun">None</option>
+                        <option value="mun">Mun</option>
+                        <option value="minmus">Minmus</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <h1>Calculate</h1>
+                <input class="button" type="submit" value="Calculate">
+            </div>
+        </form>
     </body>
 </html>
